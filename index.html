@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آية الطحاوي | مصممة مواقع</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Tajawal', sans-serif; box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { background-color: #FAF8F5; color: #1C1817; }
+        .gold { color: #C9A961; }
+        .bg-gold { background-color: #C9A961; }
+        .hero-gradient { background: linear-gradient(135deg, #1C1817 0%, #2B2420 100%); }
+        .menu-slide { transition: transform 0.3s ease-in-out; }
+        .project-card { transition: all 0.3s ease; }
+        .project-card:hover { transform: translateY(-8px); box-shadow: 0 25px 50px rgba(0,0,0,0.15); }
+        .skill-bar { transition: width 1.5s ease; }
+        .fade-in { animation: fadeIn 0.6s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-[#FAF8F5]/95 backdrop-blur-md border-b border-stone-200/60 px-5 py-3 flex justify-between items-center">
+        <button onclick="toggleMenu()" class="text-xl text-stone-800"><i class="fa-solid fa-bars"></i></button>
+        <a href="#home" class="flex items-center gap-2">
+            <i class="fa-solid fa-code gold text-xl"></i>
+            <h1 class="text-2xl font-black tracking-wider text-stone-900">آية الطحاوي</h1>
+        </a>
+        <a href="#contact" class="text-xl text-stone-800"><i class="fa-solid fa-envelope"></i></a>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero-gradient text-white min-h-[600px] flex items-center justify-center px-6 py-20">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <div class="w-32 h-32 bg-gold rounded-full flex items-center justify-center mx-auto shadow-2xl">
+                <span class="text-5xl font-black text-white">آ</span>
+            </div>
+            <span class="text-sm tracking-widest gold font-medium">مرحبًا، أنا</span>
+            <h2 class="text-4xl md:text-6xl font-black leading-tight">آية الطحاوي</h2>
+            <p class="text-lg md:text-xl opacity-90 font-light max-w-2xl mx-auto leading-relaxed">
+                بصمم مواقع عصرية تخلي براندك يبان مختلف
+            </p>
+            <div class="flex gap-3 justify-center pt-4 flex-wrap">
+                <a href="#projects" class="px-6 py-3 bg-gold hover:bg-[#b8944e] text-white text-sm font-bold transition shadow-lg rounded-sm">
+                    <i class="fa-solid fa-briefcase ml-2"></i> شوفي شغلي
+                </a>
+                <a href="#contact" class="px-6 py-3 bg-white/10 backdrop-blur-md border border-white/40 text-white text-sm font-medium hover:bg-white/20 transition rounded-sm">
+                    <i class="fa-solid fa-envelope ml-2"></i> تواصلي معايا
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="max-w-4xl mx-auto px-6 py-16 text-center">
+        <span class="text-xs text-stone-500 font-light">عنّي</span>
+        <h3 class="text-3xl md:text-4xl font-black text-stone-900 mt-2">مين أنا؟</h3>
+        <div class="w-20 h-1 bg-gold mx-auto mt-4"></div>
+        <p class="text-stone-600 leading-loose text-sm md:text-base mt-6 max-w-2xl mx-auto">
+            مصممة مواقع شغوفة بتحويل الأفكار لتصاميم حقيقية تخدم المستخدم. بحب أبني مواقع بسيطة، عصرية، وسهلة الاستخدام.
+            بدأت رحلتي بتعلم HTML و CSS و JavaScript، ودلوقتي بعمل مشاريع حقيقية لبراندات مختلفة.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="bg-white py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-10">
+                <span class="text-xs text-stone-500 font-light">مهاراتي</span>
+                <h3 class="text-3xl md:text-4xl font-black text-stone-900 mt-2">الأدوات اللي بستخدمها</h3>
+                <div class="w-20 h-1 bg-gold mx-auto mt-4"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center p-6 bg-[#FAF8F5] rounded-sm border-t-4 border-gold">
+                    <i class="fa-brands fa-html5 text-4xl text-orange-500 mb-3"></i>
+                    <p class="font-black text-sm">HTML5</p>
+                </div>
+                <div class="text-center p-6 bg-[#FAF8F5] rounded-sm border-t-4 border-gold">
+                    <i class="fa-brands fa-css3-alt text-4xl text-blue-500 mb-3"></i>
+                    <p class="font-black text-sm">CSS3</p>
+                </div>
+                <div class="text-center p-6 bg-[#FAF8F5] rounded-sm border-t-4 border-gold">
+                    <i class="fa-brands fa-js text-4xl text-yellow-500 mb-3"></i>
+                    <p class="font-black text-sm">JavaScript</p>
+                </div>
+                <div class="text-center p-6 bg-[#FAF8F5] rounded-sm border-t-4 border-gold">
+                    <i class="fa-solid fa-wind text-4xl text-cyan-500 mb-3"></i>
+                    <p class="font-black text-sm">Tailwind CSS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-16 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-10">
+                <span class="text-xs text-stone-500 font-light">أعمالي</span>
+                <h3 class="text-3xl md:text-4xl font-black text-stone-900 mt-2">مشاريعي</h3>
+                <div class="w-20 h-1 bg-gold mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Project 1 -->
+                <a href="https://fayoumoncology600600-alt.github.io/al-amal-hospital/" target="_blank" class="project-card bg-white rounded-sm overflow-hidden shadow-sm border border-stone-200 block">
+                    <div class="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center">
+                        <i class="fa-solid fa-hospital text-white text-6xl"></i>
+                    </div>
+                    <div class="p-5 space-y-2">
+                        <h4 class="font-black text-base text-stone-900">مستشفى الأمل</h4>
+                        <p class="text-xs text-stone-500 leading-relaxed">موقع لمستشفى يقدم خدمات طبية متكاملة مع أقسام ومعلومات التواصل.</p>
+                        <div class="flex gap-2 pt-2 flex-wrap">
+                            <span class="text-[10px] bg-blue-100 text-blue-700 px-2 py-1 rounded-sm font-bold">HTML</span>
+                            <span class="text-[10px] bg-cyan-100 text-cyan-700 px-2 py-1 rounded-sm font-bold">CSS</span>
+                        </div>
+                        <div class="pt-3 border-t border-stone-100 flex items-center gap-2 text-xs text-gold font-bold">
+                            <i class="fa-solid fa-arrow-left"></i> شوفي الموقع
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="https://aya-fashion-studio.vercel.app" target="_blank" class="project-card bg-white rounded-sm overflow-hidden shadow-sm border border-stone-200 block">
+                    <div class="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-amber-600 to-yellow-400 flex items-center justify-center">
+                        <i class="fa-solid fa-bag-shopping text-white text-6xl"></i>
+                    </div>
+                    <div class="p-5 space-y-2">
+                        <h4 class="font-black text-base text-stone-900">آية فاشون</h4>
+                        <p class="text-xs text-stone-500 leading-relaxed">متجر ملابس نسائية ورجالية، فيه فلترة وبحث وسلة تسوق كاملة.</p>
+                        <div class="flex gap-2 pt-2 flex-wrap">
+                            <span class="text-[10px] bg-amber-100 text-amber-700 px-2 py-1 rounded-sm font-bold">HTML</span>
+                            <span class="text-[10px] bg-yellow-100 text-yellow-700 px-2 py-1 rounded-sm font-bold">Tailwind</span>
+                            <span class="text-[10px] bg-yellow-100 text-yellow-700 px-2 py-1 rounded-sm font-bold">JS</span>
+                        </div>
+                        <div class="pt-3 border-t border-stone-100 flex items-center gap-2 text-xs text-gold font-bold">
+                            <i class="fa-solid fa-arrow-left"></i> شوفي الموقع
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="https://fayoumoncology600600-alt.github.io/al-aseel-restaurant/" target="_blank" class="project-card bg-white rounded-sm overflow-hidden shadow-sm border border-stone-200 block">
+                    <div class="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-red-700 to-orange-500 flex items-center justify-center">
+                        <i class="fa-solid fa-utensils text-white text-6xl"></i>
+                    </div>
+                    <div class="p-5 space-y-2">
+                        <h4 class="font-black text-base text-stone-900">مطعم الأصيل</h4>
+                        <p class="text-xs text-stone-500 leading-relaxed">موقع لمطعم مشويات، فيه منيو تفاعلي وفلترة للأطباق.</p>
+                        <div class="flex gap-2 pt-2 flex-wrap">
+                            <span class="text-[10px] bg-red-100 text-red-700 px-2 py-1 rounded-sm font-bold">HTML</span>
+                            <span class="text-[10px] bg-orange-100 text-orange-700 px-2 py-1 rounded-sm font-bold">Tailwind</span>
+                        </div>
+                        <div class="pt-3 border-t border-stone-100 flex items-center gap-2 text-xs text-gold font-bold">
+                            <i class="fa-solid fa-arrow-left"></i> شوفي الموقع
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-[#1C1817] text-white py-16 px-6">
+        <div class="max-w-3xl mx-auto text-center space-y-6">
+            <span class="text-xs tracking-widest gold">تواصلي معايا</span>
+            <h3 class="text-3xl md:text-4xl font-black">عندك مشروع؟ يلا نتكلم</h3>
+            <div class="w-20 h-1 bg-gold mx-auto"></div>
+            <p class="text-sm opacity-70 leading-relaxed">لو عندك فكرة موقع أو محتاج تصميم، ابعتلي على الإيميل وهرد عليك في أقرب وقت.</p>
+
+            <a href="mailto:ayaeltahawy50@gmail.com" class="inline-flex items-center gap-3 bg-gold hover:bg-[#b8944e] text-white px-8 py-4 rounded-sm font-bold text-sm transition mt-4">
+                <i class="fa-solid fa-envelope text-lg"></i> ayaeltahawy50@gmail.com
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0F0D0C] text-stone-400 px-6 py-8 text-center border-t border-gold/20">
+        <div class="flex items-center justify-center gap-2 mb-3">
+            <i class="fa-solid fa-code gold text-xl"></i>
+            <h2 class="text-xl font-black text-white">آية الطحاوي</h2>
+        </div>
+        <p class="text-xs">© 2026 جميع الحقوق محفوظة</p>
+    </footer>
+
+    <!-- Side Menu -->
+    <div id="menu-drawer" class="fixed inset-0 z-50 pointer-events-none">
+        <div id="menu-overlay" onclick="toggleMenu()" class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300"></div>
+        <div id="menu-panel" class="absolute top-0 right-0 h-full w-72 bg-white shadow-2xl menu-slide translate-x-full pointer-events-auto flex flex-col">
+            <div class="p-5 border-b border-stone-100 flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-code gold text-lg"></i>
+                    <h3 class="text-lg font-black">آية الطحاوي</h3>
+                </div>
+                <button onclick="toggleMenu()" class="text-stone-400 hover:text-black"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <nav class="p-4 space-y-1 text-sm flex-1">
+                <a href="#home" onclick="toggleMenu()" class="flex items-center gap-3 px-4 py-3 rounded-sm hover:bg-stone-50 text-stone-800"><i class="fa-solid fa-house w-5 gold"></i> الرئيسية</a>
+                <a href="#about" onclick="toggleMenu()" class="flex items-center gap-3 px-4 py-3 rounded-sm hover:bg-stone-50 text-stone-800"><i class="fa-solid fa-user w-5 gold"></i> عنّي</a>
+                <a href="#projects" onclick="toggleMenu()" class="flex items-center gap-3 px-4 py-3 rounded-sm hover:bg-stone-50 text-stone-800"><i class="fa-solid fa-briefcase w-5 gold"></i> مشاريعي</a>
+                <a href="#contact" onclick="toggleMenu()" class="flex items-center gap-3 px-4 py-3 rounded-sm hover:bg-stone-50 text-stone-800"><i class="fa-solid fa-envelope w-5 gold"></i> تواصلي معايا</a>
+            </nav>
+            <div class="p-4 border-t border-stone-100">
+                <a href="mailto:ayaeltahawy50@gmail.com" class="flex items-center justify-center gap-2 bg-[#1C1817] text-white py-3 rounded-sm text-sm font-bold hover:bg-black transition">
+                    <i class="fa-solid fa-envelope"></i> ابعتلي إيميل
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const panel = document.getElementById('menu-panel');
+            const overlay = document.getElementById('menu-overlay');
+            const parent = document.getElementById('menu-drawer');
+            if (panel.classList.contains('translate-x-full')) {
+                parent.classList.remove('pointer-events-none');
+                panel.classList.remove('translate-x-full');
+                overlay.classList.remove('opacity-0');
+                overlay.classList.add('opacity-100');
+            } else {
+                panel.classList.add('translate-x-full');
+                overlay.classList.remove('opacity-100');
+                overlay.classList.add('opacity-0');
+                setTimeout(() => parent.classList.add('pointer-events-none'), 300);
+            }
+        }
+    </script>
+</body>
+</html>
